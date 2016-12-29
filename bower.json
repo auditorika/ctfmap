@@ -1,0 +1,22 @@
+{
+  "name": "ctfmap",
+  "description": "CTF Teams map",
+  "main": "index.js",
+  "authors": [
+    "Max Kobilev <mkobilev@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angularfire": "^2.2.0",
+    "firebase": "^3.6.4"
+  }
+}
