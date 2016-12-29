@@ -1,0 +1,2 @@
+# ctfmap
+CTF teams map
