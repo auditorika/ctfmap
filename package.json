@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Max Kobilev",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -14,7 +14,17 @@
     "gulp-csso": "^2.0.0",
     "gulp-if": "^2.0.2",
     "gulp-sass": "^3.0.0",
+    "gulp-server-livereload": "^1.9.2",
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auditorika/ctfmap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/auditorika/ctfmap/issues"
+  },
+  "homepage": "https://github.com/auditorika/ctfmap#readme"
 }
