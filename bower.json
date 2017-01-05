@@ -19,8 +19,5 @@
     "angularfire": "^2.2.0",
     "firebase": "^3.6.4",
     "angular-ymaps": "^0.1.0"
-  },
-  "devDependencies": {
-    "angular-ymaps": "^0.1.0"
   }
 }

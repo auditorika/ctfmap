@@ -1,10 +1,18 @@
+// Initialize Firebase
 var config = {
-    apiKey: "AIzaSyD9iUt8rw_XB_2zj2nWtjFikmUULBTEKs4",
-    authDomain: "cbschat-ee659.firebaseapp.com",
-    databaseURL: "https://cbschat-ee659.firebaseio.com",
-    storageBucket: "cbschat-ee659.appspot.com",
-    messagingSenderId: "886584119451"
+    apiKey: "AIzaSyDm3Sjn6--PGBFfKsv9Q1RP8G1rtEsYvfg",
+    authDomain: "ctfmap-d8d0c.firebaseapp.com",
+    databaseURL: "https://ctfmap-d8d0c.firebaseio.com",
+    storageBucket: "ctfmap-d8d0c.appspot.com",
+    messagingSenderId: "355705145708"
 };
 firebase.initializeApp(config);
 
-angular.module('ctfmap', ['firebase', 'ymaps']);
+angular.module('ctfmap', [
+    'firebase',
+    'ymaps',
+    'ngAnimate',
+    'ngMaterial'
+
+]);
+
