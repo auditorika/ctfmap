@@ -6,20 +6,10 @@ function mapService($firebaseArray) {
         return $firebaseArray(messagesRef);
     };
 
-    map.shownTeams = function () {
-        return $firebaseArray(messagesRef.limitToLast(15));
-    };
-
-
     map.addTeam = function (team) {
         map.getTeams().$add(team)
     };
 
-    var team = {
-
-        
-
-    };
 
 
     return map;

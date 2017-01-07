@@ -20,57 +20,60 @@
 
 
 
-<div class="addPoint">
-
-    <ng-form name="userInfo">
-        <md-input-container>
-            <label>
-                Name
-            </label>
-            <input ng-model="addPoint.displayName" md-maxlength="20">
-        </md-input-container>
-
-        <md-input-container>
-            <label>
-                About
-            </label>
-            <input ng-model="profileCtrl.displayName" md-maxlength="20">
-        </md-input-container>
-
-        <md-input-container>
-            <label>
-                Contact
-            </label>
-            <input ng-model="profileCtrl.displayName" md-maxlength="20">
-        </md-input-container>
-
-        <md-input-container>
-            <label>
-                Adress
-            </label>
-            <input ng-model="profileCtrl.displayName" md-maxlength="20">
-        </md-input-container>
-
-
-
-        <md-button class="md-primary" ng-click="profileCtrl.submit()">
-
-            <md-icon class="md-svg-icon" style="width: 24px; height: 24px;">save</md-icon>
-
-            Сохранить
-        </md-button>
-
-    </ng-form>
-
-</div>
-
-
-<br>
-<br>
 
 <div ng-controller="MapCtrl as ctrl">
-    {{ctrl.teams}}
+    <md-button ng-click="ctrl.createTeaams()">Создать команды </md-button>
+    <md-button ng-click="ctrl.showAdd()">Добавить команду</md-button>
 
+
+    <div class="addPoint" ng-show="ctrl.showAddBool">
+
+        <ng-form name="userInfo">
+            <md-input-container>
+                <label>
+                    Name
+                </label>
+                <input ng-model="addPoint.displayName" md-maxlength="20">
+            </md-input-container>
+
+            <md-input-container>
+                <label>
+                    About
+                </label>
+                <input ng-model="profileCtrl.displayName" md-maxlength="20">
+            </md-input-container>
+
+            <md-input-container>
+                <label>
+                    Contact
+                </label>
+                <input ng-model="profileCtrl.displayName" md-maxlength="20">
+            </md-input-container>
+
+            <md-input-container>
+                <label>
+                    Adress
+                </label>
+                <input ng-model="profileCtrl.displayName" md-maxlength="20">
+            </md-input-container>
+
+
+
+            <md-button class="md-primary" ng-click="profileCtrl.submit()">
+
+                <md-icon class="md-svg-icon" style="width: 24px; height: 24px;">save</md-icon>
+
+                Сохранить
+            </md-button>
+
+        </ng-form>
+
+    </div>
+
+
+    <br>
+
+    <!-- map -->
     <yandex-map center="ctrl.map.center" zoom="ctrl.map.zoom">
         <!-- загружаем текст сообщения в атрибут properties -->
         <ymap-marker ng-repeat="marker in ctrl.markers" index="$index+1" coordinates="marker.coordinates" properties="marker.properties" options="marker.options"></ymap-marker>
@@ -78,6 +81,7 @@
 
 
 </div>
+
 
 <!-- build:js js/vendor.min.js -->
 <script src="bower_components/angular/angular.min.js"></script>
@@ -90,6 +94,7 @@
 
 <script src="bower_components/angular-animate/angular-animate.min.js"></script>
 <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/geocoder-service/geocoder-service.min.js"></script>
 
 
 

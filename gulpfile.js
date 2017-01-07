@@ -13,6 +13,7 @@ var minifyCss = require('gulp-csso');
 gulp.task('serv', function () {
     gulp.src('app')
         .pipe(server({
+            host: '0.0.0.0',
             livereload: true,
             port: 1337,
             open: true

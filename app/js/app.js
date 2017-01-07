@@ -12,7 +12,8 @@ angular.module('ctfmap', [
     'firebase',
     'ymaps',
     'ngAnimate',
-    'ngMaterial'
+    'ngMaterial',
+    'geocoder-service'
 
 ]);
 
